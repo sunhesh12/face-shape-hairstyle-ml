@@ -137,8 +137,3 @@ Features:
 * FCXXXXX - \[Other Member Name] (Data, Feature Engineering)
 
 ```
-
----
-
-Would you like me to generate `train_model.py`, `predict.py`, or `app.py` files for this project?
-```
