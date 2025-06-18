@@ -133,7 +133,15 @@ Features:
 
 ## 👨‍🎓 Team
 
-* FC110573 - Heshan Bandaranayake (Model & UI)
-* FCXXXXX - \[Other Member Name] (Data, Feature Engineering)
+
+* FC110573 - FC212001 - H.S.D.Bandaranayake 
+
+* FC110611 - FC212038 - N F M A Fernandopulle 
+
+* FC110584 - FC212011 - K.A.G.Kawya Thathsarani 
+
+* FC110580 - FC212008 - J. W. N. F. Silva 
+
+* FC110903 - FC212044 - W.K.I.Sathsarani 
 
 ```
