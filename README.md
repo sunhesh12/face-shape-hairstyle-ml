@@ -134,14 +134,23 @@ Features:
 ## 👨‍🎓 Team
 
 
-* FC110573 - FC212001 - H.S.D.Bandaranayake 
+| Name                                                                                                                        | FC Number           | Role                                      |
+| --------------------------------------------------------------------------------------------------------------------------- | ------------------- | ----------------------------------------- |
+| **H.S.D.B. Bandaranayake**                                                                                                  | FC110573 / FC212001 | 🧠 **Model Lead**                         |
+| Leads the development of machine learning models, selects algorithms, trains classifiers, and fine-tunes hyperparameters.   |                     |                                           |
+|                                                                                                                             |                     |                                           |
+| **N.F.M.A. Fernandopulle**                                                                                                  | FC110611 / FC212038 | 🧹 **Data Handling & Preprocessing Lead** |
+| Responsible for dataset collection, cleaning, facial feature extraction, and formatting data for training.                  |                     |                                           |
+|                                                                                                                             |                     |                                           |
+| **K.A.G. Kawya Thathsarani**                                                                                                | FC110584 / FC212011 | 🎨 **UI & Deployment Lead**               |
+| Designs and implements the user interface using Streamlit or Flask. Integrates model predictions into a usable frontend.    |                     |                                           |
+|                                                                                                                             |                     |                                           |
+| **J.W\.N.F. Silva**                                                                                                         | FC110580 / FC212008 | 📊 **Testing & Evaluation Specialist**    |
+| Conducts model testing, evaluates accuracy and performance metrics, and validates output consistency.                       |                     |                                           |
+|                                                                                                                             |                     |                                           |
+| **W\.K.I. Sathsarani**                                                                                                      | FC110903 / FC212044 | 📚 **Documentation & Research Lead**      |
+| Prepares the proposal, README, final documentation, and researches hairstyle-face shape mappings and supporting literature. |                     |                                           |
+|                                                                                                                             |                     |                                           |
 
-* FC110611 - FC212038 - N F M A Fernandopulle 
-
-* FC110584 - FC212011 - K.A.G.Kawya Thathsarani 
-
-* FC110580 - FC212008 - J. W. N. F. Silva 
-
-* FC110903 - FC212044 - W.K.I.Sathsarani 
 
 ```
