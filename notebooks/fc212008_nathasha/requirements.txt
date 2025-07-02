@@ -1,0 +1,7 @@
+jupyterlab
+numpy
+pandas
+scikit-learn
+opencv-python
+mediapipe
+joblib
