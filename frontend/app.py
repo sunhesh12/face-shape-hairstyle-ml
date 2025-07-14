@@ -19,7 +19,7 @@ for face_shape, group in df.groupby("face shape"):
 
 
 #Load the trained face shape classifier
-model = joblib.load('D:/5th Sem/Machine Learning/ML Project/HairstylePredicAccordingToFaceshape/notebooks/SVM_Classification/SVM_Model2.pkl') 
+model = joblib.load('model') #Add the selected model path here
 
 #MediaPipe face mesh
 mp_face_mesh = mp.solutions.face_mesh
@@ -79,7 +79,7 @@ def extract_face_features(image):
         return None
     
 #Streamlit UI
-st.markdown("<h2 style='color:#4CAF50;'>Smart Hairstyle Recommender 💇‍♀️</h2>", unsafe_allow_html=True)
+st.markdown("<h2 style='color:#4CAF50;'>Smart Hairstyle Recommender </h2>", unsafe_allow_html=True)
 
 uploaded_file = st.file_uploader("Upload an front-facing image", type=["jpg", "jpeg", "png"])
 
@@ -94,9 +94,9 @@ if uploaded_file is not None:
     if features:
         face_shape = model.predict([features])[0]
         hairstyles = hairstyle_dict.get(face_shape.lower(), ["No recommendation available"])
-        st.markdown(f"<h4 style='color:#2196F3;'>🎯 Predicted Face Shape: <b>{face_shape.capitalize()}</b></h4>", unsafe_allow_html=True)
+        st.markdown(f"<h4 style='color:#2196F3;'> Predicted Face Shape: <b>{face_shape.capitalize()}</b></h4>", unsafe_allow_html=True)
 
-        st.markdown("<h4 style='color:#9C27B0;'>💡 Top  Recommended Hairstyles:</h4>", unsafe_allow_html=True)
+        st.markdown("<h4 style='color:#9C27B0;'> Top  Recommended Hairstyles:</h4>", unsafe_allow_html=True)
         for style in hairstyles:
          st.markdown(f"<li style='color:white;'>{style}</li>",     unsafe_allow_html=True)
         
