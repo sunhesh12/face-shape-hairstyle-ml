@@ -42,6 +42,31 @@ This project uses traditional Machine Learning (not deep learning) to detect the
 > - K-Hairstyle dataset for hairstyle references
 
 ---
+## 🗂️ Project File Structure
+
+face-shape-hairstyle-ml/
+│
+├── data sheet/ # Raw and processed datasets
+│ ├── hairstyle_prediction_dataset_1000
+│ └── synthetic_face_shape_dataset_2000
+│
+├── notebooks/ # Jupyter notebooks for EDA and model testing
+│ ├── DTA_method : FC212001_Heshan Bandaranayake
+│ └── fc212008_nathasha/ :J.W.N.F. Silva
+│ └── example.ipynb
+│
+├── models/ # Saved trained models (optional)
+│ └── face_shape_model.pkl
+│
+├── images/ # Sample input/output or dataset visualizations
+│ └── test_image.jpg
+│
+├── app.py # Streamlit web app file
+├── train_model.py # Script to train ML models
+├── predict.py # Face shape and hairstyle prediction script
+├── requirements.txt # Python dependencies
+└── README.md # Project description (this file)
+
 
 ## 🛠️ Installation
 
