@@ -8,7 +8,7 @@ import pandas as pd
 from collections import defaultdict
 
 # Load dataset for rule-based system
-df = pd.read_csv("D:/5th Sem/Machine Learning/ML Project/HairstylePredicAccordingToFaceshape/data sheets/synthetic_face_shape_dataset_5000.csv")
+df = pd.read_csv("synthetic_face_shape_dataset_5000.csv")
 df.columns = df.columns.str.strip() 
 
 
@@ -18,8 +18,8 @@ for face_shape, group in df.groupby("face shape"):
     hairstyle_dict[face_shape.lower()] = top_hairstyles
 
 
-#Load the trained face shape classifier
-model = joblib.load('model') #Add the selected model path here
+# Load SVM model
+model = joblib.load(r'D:\education\japura\3rd year\1st sem\Machine Learning\project\HairstylePredicAccordingToFaceshape\notebooks\DTA_method\DTA_Model.pkl')
 
 #MediaPipe face mesh
 mp_face_mesh = mp.solutions.face_mesh
