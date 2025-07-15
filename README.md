@@ -43,7 +43,7 @@ This project uses traditional Machine Learning (not deep learning) to detect the
 
 ---
 ## 📁 Project File Structure
-
+```
 face-shape-hairstyle-ml/
 ├── data sheet/
 │   ├── hairstyle_prediction_dataset_1000/
@@ -66,7 +66,7 @@ face-shape-hairstyle-ml/
 ├── predict.py
 ├── requirements.txt
 └── README.md
-
+```
 
 
 
