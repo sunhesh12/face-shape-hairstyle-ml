@@ -1,0 +1,18 @@
+Collecting ml_dtypes
+  Using cached ml_dtypes-0.5.3-cp311-cp311-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl.metadata (8.9 kB)
+Collecting numpy>=1.21 (from ml_dtypes)
+  Downloading numpy-2.3.4-cp311-cp311-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl.metadata (62 kB)
+Using cached ml_dtypes-0.5.3-cp311-cp311-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl (5.0 MB)
+Downloading numpy-2.3.4-cp311-cp311-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl (14.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.6/14.6 MB 5.4 MB/s  0:00:02
+Installing collected packages: numpy, ml_dtypes
+  Attempting uninstall: numpy
+    Found existing installation: numpy 2.2.6
+    Uninstalling numpy-2.2.6:
+      Successfully uninstalled numpy-2.2.6
+  Attempting uninstall: ml_dtypes
+    Found existing installation: ml-dtypes 0.4.0
+    Uninstalling ml-dtypes-0.4.0:
+      Successfully uninstalled ml-dtypes-0.4.0
+
+Successfully installed ml_dtypes-0.5.3 numpy-2.3.4
