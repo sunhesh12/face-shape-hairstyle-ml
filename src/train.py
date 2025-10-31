@@ -85,7 +85,7 @@ param_grid = {
     'kernel': ['rbf']
 }
 
-grid = GridSearchCV(SVC(random_state=42), param_grid, cv=3, n_jobs=-1, verbose=2)
+grid = GridSearchCV(SVC(random_state=42, probability=True), param_grid, cv=3, n_jobs=-1, verbose=2)
 grid.fit(X_train, y_train)
 
 clf = grid.best_estimator_
@@ -103,9 +103,9 @@ print("\nConfusion Matrix:\n", confusion_matrix(y_test, y_pred))
 # Step 7 — Save Models
 # ==============================
 os.makedirs("../models", exist_ok=True)
-ft_model.save("../models/fine_tuned_resnet50.h5")
-joblib.dump(scaler, "../models/scaler.pkl")
-joblib.dump(pca, "../models/pca.pkl")
-joblib.dump(clf, "../models/svm_face_shape.pkl")
+ft_model.save("../models/fine_tuned_resnet50_SVM.h5")
+joblib.dump(scaler, "../models/scaler_SVM.pkl")
+joblib.dump(pca, "../models/pca_SVM.pkl")
+joblib.dump(clf, "../models/svm_face_shape2.pkl")
 
 print("Models saved successfully in '../models/' directory.")
