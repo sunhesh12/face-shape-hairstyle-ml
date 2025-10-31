@@ -1,6 +1,7 @@
 jupyterlab
 numpy
 pandas
+seaborn
 scikit-learn
 opencv-python
 mediapipe
