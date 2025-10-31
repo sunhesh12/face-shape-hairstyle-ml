@@ -1,14 +1,23 @@
 import numpy as np
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from tensorflow.keras.models import load_model
-from tensorflow.keras.applications.vgg16 import preprocess_input
-from tensorflow.keras.preprocessing import image
+
+# Robust imports: prefer tensorflow.keras, but fall back to standalone keras if needed
+try:
+    from tensorflow.keras.models import load_model
+    from tensorflow.keras.applications.vgg16 import preprocess_input
+    from tensorflow.keras.preprocessing import image
+except Exception:
+    from keras.models import load_model
+    from keras.applications.vgg16 import preprocess_input
+    from keras.preprocessing import image
+
 import joblib 
 from PIL import Image
 import io
 
 # --- 1. SETUP: MODEL PATHS AND LABELS ---
+
 # IMPORTANT: These paths MUST match where you saved the files in Step 1.2
 DT_MODEL_PATH = './saved_models/decision_tree_clf.pkl'
 VGG_MODEL_PATH = './saved_models/vgg16_base_model.h5'
